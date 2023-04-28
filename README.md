@@ -7,10 +7,9 @@ Functional Component açma kısayolu : rafc
 
 > Alternatif props tanımlaması
 function Course(props){
-return (
-  <div></div>
-);
-}
+return ( 
+<div></div>
+);}
 
 > Props nedir?
 Conceptually, components are like JavaScript functions. They accept arbitrary inputs (called “props”) and return React elements describing what should appear on the screen.
