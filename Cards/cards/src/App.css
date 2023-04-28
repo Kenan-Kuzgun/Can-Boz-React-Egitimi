@@ -1,0 +1,6 @@
+.image.is-4by3 img {
+  height: 150px !important;
+}
+.image.is-4by3 {
+  padding-top: 150px !important;
+}
