@@ -1,0 +1,7 @@
+.searchHeaderContainer form {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+  padding: 10px;
+}
