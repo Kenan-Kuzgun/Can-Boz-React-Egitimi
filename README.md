@@ -100,8 +100,19 @@ yerine
    <details>
  <summary>useContext</summary>
  
- * useContext props kullanmadan, data taşımaya olanak verir.
- 
- 
+ * useContext props taşımaya gerek kalmadan,child elementlerden direk kullanılabilmesini sağlar.
 
+ ![](UseContext/UseContext.drawio.png)
+ 
+ ```
+ import React from "react";
+
+const authContext = React.createContext({ status: null, login: () => {} });
+
+export default authContext;
+
+ ```
+ ```
+ const { status, login } = useContext(authContext);
+  ```
 </details>
