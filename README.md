@@ -1,6 +1,6 @@
-# Can-Boz-React-Egitimi Notlarım
+### Can-Boz-React-Egitimi Notlarım
 
-**Component Mantığı Notlar**
+#Component Mantığı Notlar
 
 > Proje açılması : npm create vite@latest
 Functional Component açma kısayolu : rafc
@@ -18,7 +18,7 @@ const description = props.description;
 const {title,description} = props;
 
 
-**State Mantığı Notlar**
+##State Mantığı Notlar
 
 > State kullanım mantığı
 Başlangıçta bir değişkene değer atanması isteniyor ve sonrasında bu değişkeni değiştirip o değişkenin tutulması istendiği durumlarda kullanılır.
@@ -26,7 +26,7 @@ useState, React'ta bir bileşenin durumunu (state) yönetmek için kullanılan b
 useState, bir fonksiyon bileşeni içinde kullanılarak, bileşenin durumunu oluşturur ve güncellemesine olanak tanır. Böylece, bileşenin durumunu değiştirerek, bileşenin yeniden render edilmesi sağlanır ve kullanıcılara daha iyi bir kullanıcı deneyimi sunulabilir.
 useState, aynı zamanda React'ta kontrollü bileşenler (controlled components) oluşturmak için de kullanılabilir. Kontrollü bileşenler, girdi değerlerinin bileşen durumu ile senkronize edildiği ve kullanıcının bu girdileri değiştirdiğinde bileşenin durumunun güncellendiği bileşenlerdir. Bu da, form gibi kullanıcı girdilerinin olduğu bileşenlerde kullanışlı bir özelliktir.
 
-> useS : kısayolu
+> useStateSnippet : kısayolu
 const [value,setValue] = useState(0);
 value : değişken,
 setValue : değişken ataması için fonksiyon
