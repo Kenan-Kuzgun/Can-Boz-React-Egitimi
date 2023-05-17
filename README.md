@@ -69,11 +69,39 @@ yerine
 * Async/await yapısı sayesinde, asenkron işlemler çağrıldıklarında promise objeleri döndürür ve bu objeler "await" anahtar kelimesiyle bekletilir. Bu sayede, işlemin tamamlanması beklenir ve işlem tamamlandığında sonuç döndürülür. Ayrıca, async fonksiyonlarında hata yönetimi de daha kolay hale gelir, çünkü hata yakalama mekanizması "try-catch" blokları kullanılarak gerçekleştirilir.
  </details>
  
-  <details>
- <summary>UseContext</summary>
+
+
+<details>
+ <summary>useEffect</summary>
+ * useEffect, bileşenin her render işleminden sonra otomatik olarak çağrılır. Bu, bileşenin durumundaki veya özelliklerindeki değişiklikler gibi renderi tetikleyen herhangi bir şey olduğunda useEffect'in yeniden çağrılacağı anlamına gelir. Ayrıca bileşen ilk kez render edildiğinde de çağrılır.
+ 
+```
+ useEffect(() => {
+    console.log(
+      "Bu kod ilk defa çağrıldığında çalışır ve içerisindeki herhangi bir state değeri değiştirildiğinde tekrar çalışır."
+    );
+  });
+
+  useEffect(() => {
+    console.log(
+      "Bu kod ilk defa çağrıldığında çalışır ve daha sonra state değişse de çalışmaz."
+    );
+  }, []);
+
+  useEffect(() => {
+    console.log(
+      "Bu kod ilk defa çağrıldığında çalışır ve daha sonra can state'i değişirse çalışır."
+    );
+  }, [can]);
+ ```
+</details>
+ 
+ 
+   <details>
+ <summary>useContext</summary>
  
  * useContext props kullanmadan, data taşımaya olanak verir.
  
+ 
 
 </details>
-
