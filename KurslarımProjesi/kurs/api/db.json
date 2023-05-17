@@ -1,0 +1,34 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "content": "Muhteşem Angular Kursu asdasasasdasasdasdas  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim ad accusamus, cum at illo animi optio sint voluptas. Veniam iusto, sequi commodi omnis quas vitae minus minima cumque consequuntur quasi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui quasi itaque quis in voluptate numquam laudantium atque est vel? Assumenda doloribus similique ipsum quas aliquam accusantium rem unde reprehenderit laborum?",
+      "title": "Angular",
+      "price": 69
+    },
+    {
+      "id": 2,
+      "content": "Muhteşem Bootstrap Kursu asdasasasdasasdasdas  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim ad accusamus, cum at illo animi optio sint voluptas. Veniam iusto, sequi commodi omnis quas vitae minus minima cumque consequuntur quasi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui quasi itaque quis in voluptate numquam laudantium atque est vel? Assumenda doloribus similique ipsum quas aliquam accusantium rem unde reprehenderit laborum?",
+      "title": "Bootstrap",
+      "price": 69
+    },
+    {
+      "id": 3,
+      "content": "Muhteşem C Programlama Kursu asdasasasdasasdasdas  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim ad accusamus, cum at illo animi optio sint voluptas. Veniam iusto, sequi commodi omnis quas vitae minus minima cumque consequuntur quasi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui quasi itaque quis in voluptate numquam laudantium atque est vel? Assumenda doloribus similique ipsum quas aliquam accusantium rem unde reprehenderit laborum?",
+      "title": "C Programlama",
+      "price": 69
+    },
+    {
+      "id": 4,
+      "content": "Muhteşem Frontend Kursu asdasasasdasasdasdas sadasdasdasda  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim ad accusamus, cum at illo animi optio sint voluptas. Veniam iusto, sequi commodi omnis quas vitae minus minima cumque consequuntur quasi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui quasi itaque quis in voluptate numquam laudantium atque est vel? Assumenda doloribus similique ipsum quas aliquam accusantium rem unde reprehenderit laborum?",
+      "title": "Frontend Kursu",
+      "price": 69
+    },
+    {
+      "id": 5,
+      "content": "Muhteşem Html Kursu asdasasasdasasdasdas",
+      "title": "Html Kursu",
+      "price": 0
+    }
+  ]
+}
