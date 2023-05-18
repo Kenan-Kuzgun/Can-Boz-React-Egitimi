@@ -1,0 +1,12 @@
+.nav {
+  background-color: aqua;
+  display: flex;
+  gap: 50px;
+  height: 30px;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.active {
+  background-color: bisque;
+}
