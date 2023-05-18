@@ -116,3 +116,107 @@ export default authContext;
  const { status, login } = useContext(authContext);
   ```
 </details>
+
+<details>
+<summary>useReducer</summary>
+
+* React'te useReducer, durumun yönetilmesini sağlayan bir kancadır. Bir azaltıcı işlev belirleyerek durumu yönetmek için kullanılır. Bu, useState kancasının bir alternatifidir ve durum mantığı karmaşık olduğunda veya durum güncellemeleri önceki duruma bağlı olduğunda faydalıdır.
+ 
+ ```
+ const [count, dispatch] = useReducer(reducer, initialValue);
+  ```
+ 
+  ```
+ const reducer = (state, action) => {
+  switch (action) {
+    case "increment":
+      return state + 1;
+    case "descrement":
+      return state - 1;
+    case "reset":
+      return initialValue;
+    default:
+      return state;
+  }
+};
+  ```
+   ```
+      <div>Sayı: {numberContext.count}</div>
+      <button onClick={() => numberContext.dispatch("increment")}>
+        Arttır
+      </button>
+      <button onClick={() => numberContext.dispatch("descrement")}>
+        Azalt
+      </button>
+      <button onClick={() => numberContext.dispatch("reset")}>Reset</button>
+   ```
+</details>
+
+<details>
+ <summary>useMemo ve useCallback</summary>
+
+ * useMemo ve useCallback da React'te bulunan kancalardır. İkisi de performans optimizasyonu sağlamak için kullanılır ve işlevsel bileşenlerde özellikle faydalıdır. İşlevin yeniden hesaplanmasını ve bileşenin gereksiz yere yeniden render edilmesini önlerler.
+ 
+ * useMemo, bir değeri bellekte önbelleğe almak için kullanılır. Bu değer, bağımlılıklardaki değişikliklere göre yeniden hesaplanır ve sadece gerektiğinde güncellenir.
+  
+ ``` 
+    const memoizedValue = useMemo(() => {
+     // Değerin hesaplandığı işlemler burada yapılır
+     return calculatedValue;
+   }, [dependency1, dependency2]);
+ 
+ ```
+
+ * useCallback, bir işlevin önbelleğe alınmasını ve sadece gerektiğinde güncellenmesini sağlar. Bu özellikle, işlevlerin bağımlılıkları değiştiğinde bileşenin yeniden render edilmesini önlemek için kullanılır.
+  
+ ```
+  const memoizedCallback = useCallback(() => {
+  // İşlevin içeriği burada yer alır
+}, [dependency1, dependency2]);
+ ```
+</details>
+
+<details>
+ <summary>useRef,useTransition ve useDeferredValue</summary>
+
+ * useRef, React'te bir değişkeni veya bir bileşeni tutmak için kullanılan bir kancadır. useRef ile oluşturulan referans, bileşenin her render işleminden sonra aynı kalır ve bileşen yeniden render edilse bile referans değişmez.useRef kullanarak oluşturulan referans, .current özelliği üzerinden erişilebilir ve bu özellik referansın güncel değerini temsil eder. Referansın güncellenmesi, bileşenin yeniden render edilmesine neden olmaz.
+
+* useTransition, işlemin geçişli bir şekilde gerçekleştirilmesini sağlar. Bu, kullanıcıya işlemin yükleniyor olduğunu veya tamamlanmadığını göstermek için bir geçiş süreci sağlar. Geçişli işlemler, performansı artırır ve kullanıcı deneyimini iyileştirir.
+
+ ```
+  const [isShowing, setIsShowing] = useState(false);
+  const [startTransition, isPending] = useTransition();
+
+  const handleClick = () => {
+    startTransition(() => {
+      setIsShowing(!isShowing);
+    });
+  };
+ 
+ ```
+ 
+ * useDeferredValue
+ 
+ ```
+  import { useMemo, useDeferredValue } from 'react';
+function Characters({ input }) {
+  const deferredValue = useDeferredValue(input);
+  const myList = useMemo(() => {
+    const myArray = [];
+    for (let i = 0; i < 3000; i++) {
+      myArray.push(<div key={i}>{deferredValue}</div>);
+    }
+    return myArray;
+  }, [deferredValue]);
+  return myList;
+}
+
+export default Characters;
+
+ ```
+ 
+
+</details>
+
+
+
