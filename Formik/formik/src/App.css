@@ -1,0 +1,55 @@
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  width: 500px;
+}
+
+label {
+  display: block;
+}
+
+input,
+select {
+  width: 500px;
+  height: 30px;
+  border-radius: 4px;
+}
+
+label {
+  margin: 10px 0;
+}
+
+button {
+  margin-top: 20px;
+  width: 508px;
+  border-radius: 4px;
+  height: 30px;
+  background-color: green;
+  color: white;
+  border: 1px solid white;
+}
+
+input {
+  border: 2px solid black;
+}
+
+.input-error {
+  border-color: #fc8181;
+}
+
+.error {
+  color: #fc8181;
+  font-size: 12px;
+  text-align: left;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
