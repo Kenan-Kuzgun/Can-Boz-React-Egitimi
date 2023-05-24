@@ -67,6 +67,21 @@ yerine
  şeklinde kullanılabilir.
  
 * Async/await yapısı sayesinde, asenkron işlemler çağrıldıklarında promise objeleri döndürür ve bu objeler "await" anahtar kelimesiyle bekletilir. Bu sayede, işlemin tamamlanması beklenir ve işlem tamamlandığında sonuç döndürülür. Ayrıca, async fonksiyonlarında hata yönetimi de daha kolay hale gelir, çünkü hata yakalama mekanizması "try-catch" blokları kullanılarak gerçekleştirilir.
+
+ TypeScript Notlar 
+ ```
+ //Arrow Functions
+ function carpim(a:number,b:number):number{
+ return a*b;
+ }
+ 
+ let carpim = (a:number,b:number):number => { 
+ return a*b;
+ }
+ 
+ let carpim = (a:number,b:number):number => a*b;
+
+ ```
  </details>
  
 
