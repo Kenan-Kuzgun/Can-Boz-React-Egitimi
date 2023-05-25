@@ -1,9 +1,4 @@
-type instructorListProps = {
-  instructorListProp: {
-    firstName: string;
-    lastName: string;
-  }[];
-};
+import { instructorListProps } from "./Propstype";
 
 function InstructorList(props: instructorListProps) {
   return (

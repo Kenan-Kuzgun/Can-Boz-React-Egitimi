@@ -1,8 +1,4 @@
-type DataComing = {
-  name: string;
-  courseNumber: number;
-  isBest: boolean;
-};
+import { DataComing } from "./Propstype";
 
 function Home(props: DataComing) {
   return (

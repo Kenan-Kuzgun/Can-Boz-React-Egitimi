@@ -1,9 +1,4 @@
-type instructorProps = {
-  instructorNameLastName: {
-    firstName: string;
-    lastName: string;
-  };
-};
+import { instructorProps } from "./Propstype";
 
 function Instructor(props: instructorProps) {
   return (
