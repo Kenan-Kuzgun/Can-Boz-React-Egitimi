@@ -1,0 +1,76 @@
+.courseForm {
+  margin-top: 15px;
+  padding: 15px;
+}
+.courseForm .field-group {
+  display: flex;
+  margin-bottom: 0px;
+}
+.courseForm form {
+  display: flex;
+  justify-content: space-between;
+}
+.courseForm .field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px !important;
+  margin-right: 10px;
+}
+.courseForm .field label.label {
+  margin-bottom: 0px;
+  margin-right: 10px;
+}
+.courseForm input {
+  width: 100%;
+}
+.courseForm h4.subtitle.is-3 {
+  margin-bottom: 0.75rem;
+}
+
+.courseList h1 {
+  font-size: 24px;
+}
+.courseList .panel.bold {
+  font-weight: 600;
+}
+
+.courseList .panel {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #dbdbdb;
+  border-radius: 30px;
+}
+
+.courseList .note {
+  font-style: italic;
+  display: block;
+  margin: 40px 20px;
+}
+
+.listHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.listHeader h3.title {
+  margin-bottom: 0px;
+}
+
+.listHeader .search {
+  display: flex;
+  align-items: center;
+}
+.listHeader .search .label {
+  margin-bottom: 0px;
+  margin-right: 10px;
+}
+
+.coursePrice {
+  text-align: right;
+  font-size: 2rem;
+}
