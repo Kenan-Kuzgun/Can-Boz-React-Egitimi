@@ -1,31 +1,45 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { removeCourse } from "../store/slices/courseSlice";
 
 function CourseList() {
-  const courses = useSelector((state) => {
-    return state.course.data;
+  const dispatch = useDispatch();
+  const { courses } = useSelector(({ form, course: { data, searchTerm } }) => {
+    const filtered = data.filter((course) =>
+      course.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    return {
+      courses: filtered,
+    };
   });
   return (
     <div>
       {courses.map((course) => {
         return (
-          <div key={course.id} class="card">
-            <header class="card-header">
-              <p class="card-header-title">{course.name}</p>
-              <button class="card-header-icon" aria-label="more options">
-                <span class="icon">
-                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+          <div key={course.id} className="card">
+            <header className="card-header">
+              <p className="card-header-title">{course.name}</p>
+              <button className="card-header-icon" aria-label="more options">
+                <span className="icon">
+                  <i className="fas fa-angle-down" aria-hidden="true"></i>
                 </span>
               </button>
             </header>
-            <div class="card-content">
-              <div class="content">{course.description}</div>
-              <div class="content">{course.cost}</div>
+            <div className="card-content">
+              <div className="content">{course.description}</div>
+              <div className="content" style={{ opacity: 0.5 }}>
+                {course.cost} TL
+              </div>
             </div>
-            <footer class="card-footer">
-              <a href="#" class="card-footer-item">
+            <footer className="card-footer">
+              <button
+                onClick={() => {
+                  dispatch(removeCourse(course.id));
+                }}
+                className="card-footer-item"
+              >
                 Sil
-              </a>
+              </button>
             </footer>
           </div>
         );
